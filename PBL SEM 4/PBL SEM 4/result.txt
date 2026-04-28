@@ -1,0 +1,2 @@
+Greedy Profit: 160
+DP Profit: 100
