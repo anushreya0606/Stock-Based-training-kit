@@ -8,7 +8,7 @@ void showPrices(int prices[], int n) {
 }
 
 void drawGraphVisual(int prices[], int n) {
-    printf("\n    Price Visualization  \n");
+    printf("\n--- Price Visualization ---\n");
 
     for(int i = 0; i < n; i++) {
         printf("Day %d | ", i+1);
@@ -19,7 +19,7 @@ void drawGraphVisual(int prices[], int n) {
 }
 
 void showTransactions(int prices[], int n) {
-    printf("\n    Transactions    \n");
+    printf("\n--- Transactions ---\n");
 
     for(int i = 1; i < n; i++) {
         if(prices[i] > prices[i-1]) {

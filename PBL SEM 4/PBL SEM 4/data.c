@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// -------- SAMPLE DATA --------
 void loadSampleData(int prices[], int *n) {
     int choice;
 
@@ -52,7 +53,7 @@ void loadSampleData(int prices[], int *n) {
     }
 }
 
-
+// -------- USER INPUT --------
 void inputData(int prices[], int *n) {
     printf("Enter number of days: ");
     scanf("%d", n);
@@ -63,7 +64,7 @@ void inputData(int prices[], int *n) {
     }
 }
 
-
+// -------- FILE INPUT --------
 void loadFromFile(int prices[], int *n) {
     FILE *fp = fopen("prices.txt", "r");
 
