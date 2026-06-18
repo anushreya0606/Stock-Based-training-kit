@@ -1,4 +1,4 @@
-# 📈 Stock Buy-Sell Analyzer (PBL Sem 4)
+#  Stock Buy-Sell Analyzer (PBL Sem 4)
 
 A **full-stack hybrid Data Structures & Algorithms project** combining:
 
@@ -41,7 +41,7 @@ It features a **rich GUI built with Tkinter** and integrates a **C backend execu
 
 ---
 
-## ⚙️ System Architecture
+## System Architecture
 
 ```
 Python Tkinter GUI  (Frontend)
@@ -146,7 +146,7 @@ python stock_analyzer_gui.py
 
 ---
 
-## 🧪 How It Works
+##  How It Works
 
 1. User enters stock prices
 2. Python GUI processes input
@@ -159,7 +159,7 @@ python stock_analyzer_gui.py
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 * Replace Tkinter with React / Streamlit dashboard
 * Add real stock API (Yahoo Finance / Alpha Vantage)
@@ -169,13 +169,13 @@ python stock_analyzer_gui.py
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Anushreya Tomar**
 GitHub: [https://github.com/anushreya0606](https://github.com/anushreya0606)
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This project is for **educational and academic purposes only**. It is not financial advice and should not be used for real trading decisions.
