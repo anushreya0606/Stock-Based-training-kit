@@ -2,13 +2,13 @@
 
 A **full-stack hybrid Data Structures & Algorithms project** combining:
 
-* 🧠 Python (Frontend + UI using Tkinter)
-* ⚙️ C (Backend for high-performance computation via subprocess)
-* 📊 Multiple DSA algorithms for stock profit analysis
+*  Python (Frontend + UI using Tkinter)
+*  C (Backend for high-performance computation via subprocess)
+*  Multiple Greedy and DP algos.
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 This project simulates a **stock market analysis system** that compares multiple algorithmic approaches to the Buy-Sell problem using real stock price data.
 
@@ -16,7 +16,7 @@ It features a **rich GUI built with Tkinter** and integrates a **C backend execu
 
 ---
 
-## 🎯 Key Objectives
+## Key Objectives
 
 * Implement and compare multiple DSA algorithms on stock data
 * Build a professional GUI using Python Tkinter
@@ -27,32 +27,17 @@ It features a **rich GUI built with Tkinter** and integrates a **C backend execu
 
 ---
 
-## 🧠 Algorithms Implemented
+## Algorithms Implemented
 
-### 1. Greedy Algorithm (O(n))
+### 1. Brute force Greedy Algorithm
 
 * Multiple transactions allowed
 * Adds all profitable differences
 
-### 2. Dynamic Programming (O(n))
+### 2. Smart optimised DP (Dynamic Programming)
 
 * Single best buy-sell transaction
 * Tracks minimum price and maximum profit
-
-### 3. Graph / Matrix Approach (O(n²))
-
-* Builds adjacency matrix of all profits
-* Finds best edge (buy-sell pair)
-
-### 4. Divide & Conquer (O(n log n))
-
-* Recursively splits array
-* Combines left, right, and cross profits
-
-### 5. Kadane’s Algorithm (O(n))
-
-* Applied on price differences
-* Finds maximum subarray gain
 
 ---
 
@@ -73,33 +58,26 @@ Hybrid Result Aggregation (Python)
 
 ---
 
-## 🖥️ Features
+##  Features
 
-### 🎨 UI Features (Tkinter)
+###  UI Features (Tkinter)
 
-* Modern multi-panel dashboard
-* Login screen (open authentication)
-* Collapsible result sections
+
 * Animated stock price chart
-* Hover tooltips on graph
-* Transaction timeline visualization
-* Profit comparison bars
-* Backpropagation visualizer (ML simulation)
+* Expanded, high-visibility mathematical chart canvas.
+* Profit comparison 
 
 ---
 
-### 📊 Functional Features
+### Functional Features
 
-* Greedy vs DP vs Graph vs D&C vs Kadane comparison
-* Real-time chart animation
-* Buy/Sell signal visualization
-* Price matrix heatmap
-* Execution history tracking
-* Duplicate analysis detection
+* Greedy vs DP 
+* Real-time chart visualization
+* Execution history 
 
 ---
 
-### ⚙️ Backend Integration
+###  Backend Integration
 
 * C executable used for:
 
@@ -110,22 +88,30 @@ Hybrid Result Aggregation (Python)
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 Stock-Based-training-kit/
 │
-├── stock_analyzer_gui.py      # Main Python Tkinter UI
-├── stock_solver.c/.exe        # C backend (compiled)
-├── analysis_history.json      # Saved user analysis history
+├── frontend.py                # Main Python Tkinter interface and Matplotlib engine
+├── main.c                     # C architecture coordinating menus and pipes
+├── data.c                     # Ingests vector parameters from prices.txt
+├── dp.c                       # Contains the friction-adjusted DP state logic
+├── greedy.c                   # Contains the friction-adjusted Greedy loop logic
+├── display.c                  # Textual asset curve handling
+├── graph.c                    # State profit matrix logic
+├── analysis.c                 # Compares algorithms and handles thresholds
+├── fileio.c                   # Writes results out to result.txt
 │
-├── assets/                    # (optional images/resources)
-├── README.md
+├── prices.txt                 # Intermediate data bridge file used by C loaders
+├── result.txt                 # Final output metrics read by Python
+├── stock.exe                  # Compiled high-performance C binary executable
+└── README.md                  # Project system documentation
 ```
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 ### 1. Clone Repository
 
@@ -146,16 +132,8 @@ pip install matplotlib
 
 ### 3. Compile C Backend (if needed)
 
-If you have `stock_solver.c`:
-
 ```bash
-gcc stock_solver.c -o stock_solver.exe
-```
-
-Update path in Python:
-
-```python
-C_BACKEND_PATH = "path_to_stock_solver.exe"
+gcc main.c data.c display.c dp.c fileio.c graph.c greedy.c analysis.c -o stock.exe
 ```
 
 ---
@@ -171,38 +149,13 @@ python stock_analyzer_gui.py
 ## 🧪 How It Works
 
 1. User enters stock prices
-2. Selects trading mode
-3. Python GUI processes input
-4. Optional C backend executes optimized logic
-5. Python aggregates all algorithm outputs
-6. Results displayed via:
-
-   * Charts
-   * Tables
-   * Animated graphs
-   * Comparison bars
+2. Python GUI processes input
+3. Optional C backend executes optimized logic
+4. Python aggregates all algorithm outputs
+5. Results displayed via charts
 
 ---
 
-## 📊 Visual Components
-
-* 📈 Live stock line chart with BUY/SELL markers
-* 🧮 Profit matrix (graph algorithm)
-* 📊 Bar comparison of algorithms
-* 🔁 Transaction timeline (step-by-step)
-* 🧠 Neural-style backprop visualization
-
----
-
-## 🧠 Learning Outcomes
-
-This project demonstrates:
-
-* Algorithm complexity comparison
-* Hybrid system design (C + Python)
-* GUI development with Tkinter
-* Data visualization with Matplotlib
-* Subprocess communication in Python
 
 ---
 
